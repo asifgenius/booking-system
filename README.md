@@ -65,10 +65,25 @@ This project is a React-based **Customer Support Zone** designed to display cust
 Create a README file to answer the following question-
 
  - What is JSX, and why is it used?
+
+   JSX stands for JavaScript XML. It is a syntax extension that lets developers write HTML-like code inside JavaScript. React uses JSX because it makes component structure easier to read, write, and maintain. JSX is converted into regular JavaScript before the code runs in the browser.
+
  - What is the difference between State and Props?
+
+   Props are values passed from a parent component to a child component. They are read-only and are used to share data between components.State is data managed inside a component. It can change over time, and when it changes, React re-renders the component to show the updated UI.
+
  - What is the useState hook, and how does it work?
+
+   useState is a React hook used to add state to a functional component. It returns two things:
+   The current state value, A function to update that state. When the update function is called, React updates the state and re-renders the component.
+
  - How can you share state between components in React?
+ 
+   A common way to share state is to lift the state up to the nearest common parent component. The parent keeps the state and passes it down to child components through props.
+   For larger applications, React Context or external state management libraries can also be used.
  - How is event handling done in React?
+ 
+   Event handling in React is done using camelCase event names such as onClick, onChange, and onSubmit. You pass a function to the event handler, and React calls that function when the event happens.
 
 ---
 
